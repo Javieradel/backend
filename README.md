@@ -44,6 +44,8 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+# Swagger
+  Para realizar las pruebas de los endpoints la direccion es la estándar: ```http://localhost:3000/api```
 
 ## Test
 
