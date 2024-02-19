@@ -7,8 +7,7 @@ export class AppController {
   constructor() {}
 
   @Get()
-  index(r: Request){
-   
-    return JSON.stringify(r)
+  index(){
+    return '<a href="/api"> IR A SWAGGER</a>'
   }
 }
