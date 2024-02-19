@@ -10,10 +10,12 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const config = new DocumentBuilder()
+    .addBearerAuth()
     .setTitle('Prueba Nolatech')
     .setDescription('Prueba técnica Nolatech, login básico con CRUD Usuarios usando autenticación con passport, Puedes hacer login con el siguiente payload: {"name":"Benjamin", "password": "password901"}')
     .setVersion('1.0')
-    .build();
+    .build()
+
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
